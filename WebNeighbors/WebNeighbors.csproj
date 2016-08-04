@@ -201,6 +201,13 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Start\Pictures\baby-sitter.jpg" />
+    <Content Include="Views\Start\Pictures\dog-walker.jpg" />
+    <Content Include="Views\Start\Pictures\grandma-cooker.jpg" />
+    <Content Include="Views\Start\Pictures\guitar-teacher.jpg" />
+    <Content Include="Views\Start\Pictures\house-cleaner.jpg" />
+    <Content Include="Views\Start\Pictures\private-teacher.jpg" />
+    <Content Include="Views\Start\Pictures\yoga-teacher.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
