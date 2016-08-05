@@ -23,5 +23,10 @@ namespace WebNeighbors.Controllers
     {
       return View();
     }
+
+    public ActionResult Map()
+    {
+      return View();
+    }
   }
 }
