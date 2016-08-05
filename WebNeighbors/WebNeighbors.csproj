@@ -183,13 +183,13 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Pictures\baby-sitter-500.jpg" />
-    <Content Include="Content\Pictures\dog-walker-500.jpg" />
-    <Content Include="Content\Pictures\grandma-cooker-500.jpg" />
-    <Content Include="Content\Pictures\guitar-teacher-500.jpg" />
-    <Content Include="Content\Pictures\house-cleaner-500.jpg" />
-    <Content Include="Content\Pictures\private-teacher-500.jpg" />
-    <Content Include="Content\Pictures\yoga-teacher-500.jpg" />
+    <Content Include="Content\Pictures\baby-sitter-500-border.jpg" />
+    <Content Include="Content\Pictures\dog-walker-500-border.jpg" />
+    <Content Include="Content\Pictures\grandma-cooker-500-border.jpg" />
+    <Content Include="Content\Pictures\guitar-teacher-500-border.jpg" />
+    <Content Include="Content\Pictures\house-cleaner-500-border.jpg" />
+    <Content Include="Content\Pictures\private-teacher-500-border.jpg" />
+    <Content Include="Content\Pictures\yoga-teacher-500-border.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
