@@ -5,6 +5,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            });
+
+            /* Place bookmarks*/
+            myPlacemark = new ymaps.Placemark([55.86, 37.74], {
+                hintContent: 'Выгул собак',
+                balloonContent: 'Марина не имеет возможности завести собаку, но с удовольствием погуляет с вашей!'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([55.88, 37.74], {
+                hintContent: 'Пирожки горячие',
+                balloonContent: 'Пирожков Бабы Мани хватит и на вкучат, и на соседей!'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([55.85, 37.73], {
+                hintContent: 'Уроки гитары',
+                balloonContent: 'Иван Иваныч играет шансон и готов по-соседски рассказать что к чему.'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([55.768, 37.647], {
+                hintContent: 'Уборка дома',
+                balloonContent: 'Приберусь в доме, помою окна. Зульфия.'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([55.760, 37.639], {
+                hintContent: 'Помощь с домашними заданиями 1-3 класс',
+                balloonContent: 'Чуткий и отзывчивый педагог Анжела Денисовна исправит двойки вашему отпрыску.'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark([55.763, 37.642], {
+                hintContent: 'Тренер йоги',
+                balloonContent: 'Ольга практирует йогу и готова потренироваться вместе с вами.'
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -128,5 +179,11 @@
             Соседи на карте <small>найди знакомых и отметь себя!</small>
         </h2>
     </div>
+
+    <!-- Yandex Map -->
+    <div class="container">
+        <div id="map" style="width: 600px; height: 400px"></div>
+    </div>
+
 </body>
 </html>
