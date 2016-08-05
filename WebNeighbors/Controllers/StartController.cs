@@ -13,5 +13,10 @@ namespace WebNeighbors.Controllers
     {
       return View();
     }
+
+    public ActionResult Temp()
+    {
+      return View();
+    }
   }
 }
