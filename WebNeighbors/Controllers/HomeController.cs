@@ -10,7 +10,8 @@ namespace WebNeighbors.Controllers
   {
     public ActionResult Index()
     {
-      return View();
+      return Redirect("/Start/Index");
+     // return View();
     }
 
     public ActionResult About()
