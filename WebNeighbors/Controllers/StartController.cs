@@ -18,5 +18,10 @@ namespace WebNeighbors.Controllers
     {
       return View();
     }
+
+    public ActionResult Simple()
+    {
+      return View();
+    }
   }
 }

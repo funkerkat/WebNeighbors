@@ -181,9 +181,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
+    <Content Include="Content\bootstrap-spacelab.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Pictures\baby-sitter-500-border.jpg" />
+    <Content Include="Content\bootstrap-darkly.css" />
+    <Content Include="Content\bootstrap-simplex.css" />
+    <Content Include="Content\bootstrap-superhero.css" />
     <Content Include="Content\Pictures\dog-walker-500-border.jpg" />
     <Content Include="Content\Pictures\grandma-cooker-500-border.jpg" />
     <Content Include="Content\Pictures\guitar-teacher-500-border.jpg" />
@@ -244,6 +249,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Start\Index.cshtml" />
     <Content Include="Views\Start\Temp.cshtml" />
+    <Content Include="Views\Start\Simple.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
