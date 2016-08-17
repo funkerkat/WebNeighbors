@@ -20,7 +20,7 @@
                 </tr>
                 <tr>
                     <td><p>Введите название услуги:</p></td>
-                    <td><input type="text" name="ServiceName"/></td>
+                    <td><input type="text" name="ServiceName" /></td>
                 </tr>
                 <tr>
                     <td><p>Введите описание услуги:</p></td>
@@ -31,29 +31,31 @@
         </form>
     </div>
 
-    <div>
-        <h3>Распродажа книг</h3>
-        <table>
-            <tr class="header">
-                <td><p>ID</p></td>
-                <td><p>Имя</p></td>
-                <td><p>Услуга</p></td>
-                <td><p>Описание</p></td>
-                <td><p>Дата</p></td>
-                <td></td>
-            </tr>
-            @foreach (var person in Model)
-            {
-            <tr>
-                <td><p>@person.Id</p></td>
-                <td><p>@person.PersonName</p></td>
-                <td><p>@person.ServiceName</p></td>
-                <td><p>@person.ServiceDescription</p></td>
-            </tr>
-            }
+    <div class="container">
+        <h2>Список соседей</h2>
+        <p>или чем заполнена база данных:</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Имя</th>
+                    <th>Услуга</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in Model)
+                {
+                <tr>
+                    <td><p>@person.Id</p></td>
+                    <td><p>@person.PersonName</p></td>
+                    <td><p>@person.ServiceName</p></td>
+                    <td><p>@person.ServiceDescription</p></td>
+                </tr>
+                }
+            </tbody>
         </table>
     </div>
-
 
 </body>
 </html>

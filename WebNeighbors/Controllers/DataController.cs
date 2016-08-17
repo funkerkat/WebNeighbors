@@ -14,12 +14,12 @@ namespace WebNeighbors.Controllers
     }
 
     [HttpPost]
-    public string Index(Person person)
+    public ActionResult Index(Person person)
     {
       db.Persons.Add(person);
       db.SaveChanges();
 
-      return person.PersonName;
+      return View(db.Persons);
     }
   }
 }
