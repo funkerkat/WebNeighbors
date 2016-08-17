@@ -7,8 +7,8 @@ namespace WebNeighbors.Models
   {
     protected override void Seed(PersonContext db)
     {
-      db.Persons.Add(new Person {PersonName = "Василий", ServiceName = "дворник", ServiceDescription = "Подметаю во дворе.", PostingDate = DateTime.Now});
-      db.Persons.Add(new Person { PersonName = "Марья", ServiceName = "уборщица", ServiceDescription = "Мою окна.", PostingDate = DateTime.Now });
+      db.Persons.Add(new Person {PersonName = "Василий", ServiceName = "дворник", ServiceDescription = "Подметаю во дворе."});
+      db.Persons.Add(new Person { PersonName = "Марья", ServiceName = "уборщица", ServiceDescription = "Мою окна."});
 
       base.Seed(db);
     }

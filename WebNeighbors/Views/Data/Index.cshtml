@@ -1,7 +1,4 @@
 ﻿@model IEnumerable<WebNeighbors.Models.Person>
-@{
-  Layout = null;
-}
 
 <!DOCTYPE html>
 
@@ -12,6 +9,27 @@
 </head>
 <body>
 
+    <div>
+        <h3>Форма оформления покупки</h3>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.Id" name="Id" />
+            <table>
+                <tr>
+                    <td><p>Введите свое имя </p></td>
+                    <td><input type="text" name="PersonName" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите название услуги:</p></td>
+                    <td><input type="text" name="ServiceName"/></td>
+                </tr>
+                <tr>
+                    <td><p>Введите описание услуги:</p></td>
+                    <td><input type="text" name="ServiceDescription" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
 
     <div>
         <h3>Распродажа книг</h3>
@@ -31,7 +49,6 @@
                 <td><p>@person.PersonName</p></td>
                 <td><p>@person.ServiceName</p></td>
                 <td><p>@person.ServiceDescription</p></td>
-                <td><p>@person.PostingDate</p></td>
             </tr>
             }
         </table>

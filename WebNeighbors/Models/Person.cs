@@ -12,6 +12,6 @@ namespace WebNeighbors.Models
 
     public string ServiceDescription{ get; set; }
 
-    public DateTime PostingDate { get; set; }
+  //  public DateTime PostingDate { get; set; }
   }
 }
