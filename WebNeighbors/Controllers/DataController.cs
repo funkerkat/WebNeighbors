@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using WebNeighbors.Models;
 
 namespace WebNeighbors.Controllers
@@ -11,7 +10,6 @@ namespace WebNeighbors.Controllers
     // GET: Data
     public ActionResult Index()
     {
-      IEnumerable<Person> persons = db.Persons;
       return View(db.Persons);
     }
   }
