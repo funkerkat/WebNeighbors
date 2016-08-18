@@ -9,21 +9,52 @@
 </head>
 <body>
 
+    <div class="container">
+        <h2>Введите ваше данные</h2>
+        <form role="form" method="post" action="">
+            <div class="form-group">
+                <label for="personname">Имя:</label>
+                <input type="text" name="PersonName" class="form-control" id="personname" placeholder="Например, Марья Петровна">
+            </div>
+            <div class="form-group">
+                <label for="service">Услуга:</label>
+                <input type="text" name="ServiceName" class="form-control" id="service" placeholder="Например, пирожки">
+            </div>
+            <div class="form-group">
+                <label for="description">Описание:</label>
+                <textarea class="form-control" name="ServiceDescription" rows="4" id="description" placeholder="Например, пеку вкусные пирожки с грибами, картошкой, луком"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Отправить</button>
+        </form>
+    </div>
+
     <div>
         <h3>Форма оформления покупки</h3>
         <form method="post" action="">
             <input type="hidden" value="@ViewBag.Id" name="Id" />
             <table>
                 <tr>
-                    <td><p>Введите свое имя </p></td>
-                    <td><input type="text" name="PersonName" /> </td>
+                    <td>
+                        <p>Введите свое имя </p>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label for="usr">Name:</label>
+                            <input type="text" name="PersonName" class="form-control" id="usr">
+                        </div>
+                    </td>
+
                 </tr>
                 <tr>
-                    <td><p>Введите название услуги:</p></td>
+                    <td>
+                        <p>Введите название услуги:</p>
+                    </td>
                     <td><input type="text" name="ServiceName" /></td>
                 </tr>
                 <tr>
-                    <td><p>Введите описание услуги:</p></td>
+                    <td>
+                        <p>Введите описание услуги:</p>
+                    </td>
                     <td><input type="text" name="ServiceDescription" /></td>
                 </tr>
                 <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
