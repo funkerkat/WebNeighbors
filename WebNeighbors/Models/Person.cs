@@ -12,6 +12,10 @@ namespace WebNeighbors.Models
 
     public string ServiceDescription{ get; set; }
 
-  //  public DateTime PostingDate { get; set; }
+    public double CoordinateX { get; set; }
+
+    public double CoordinateY { get; set; }
+
+    //  public DateTime PostingDate { get; set; }
   }
 }

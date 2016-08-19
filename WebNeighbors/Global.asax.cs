@@ -10,7 +10,7 @@ namespace WebNeighbors
   {
     protected void Application_Start()
     {
-    //  Database.SetInitializer(new PersonsDbInitializer());
+      Database.SetInitializer(new PersonsDbInitializer());
 
       AreaRegistration.RegisterAllAreas();
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
