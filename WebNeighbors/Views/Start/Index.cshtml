@@ -176,34 +176,41 @@
 
     <!-- Page Content -->
     <div class="container">
-        <h2 class="page-header">
-            Соседи на карте <small>найди знакомых и отметь себя!</small>
-        </h2>
-    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="page-header">Соседи на карте <small>найди знакомых и отметь себя!</small></h2>
+            </div>
+            <div class="col-md-6">
+                <h2 class="page-header">Ваши данные <small>присоединяйтесь к проекту!</small></h2>
+            </div>
+        </div>
 
-    <!-- Yandex Map -->
-    <div class="container">
-        <div id="map" style="width: 600px; height: 400px"></div>
-    </div>
-
-    <!-- Input form -->
-    <div class="container">
-        <h2>Введите ваше данные</h2>
-        <form role="form" method="post" action="">
-            <div class="form-group">
-                <label for="personname">Имя:</label>
-                <input type="text" name="PersonName" class="form-control" id="personname" placeholder="Например, Марья Петровна">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Yandex Map -->
+                <div id="map" style="width: 100%; height: 400px"></div>
             </div>
-            <div class="form-group">
-                <label for="service">Услуга:</label>
-                <input type="text" name="ServiceName" class="form-control" id="service" placeholder="Например, пирожки">
+            <div class="col-md-6">
+                <!-- Input form -->
+                <div class="container">
+                    <form role="form" method="post" action="">
+                        <div class="form-group">
+                            <label for="personname">Имя:</label>
+                            <input type="text" name="PersonName" class="form-control" id="personname" placeholder="Например, Марья Петровна">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Услуга:</label>
+                            <input type="text" name="ServiceName" class="form-control" id="service" placeholder="Например, пирожки">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Описание:</label>
+                            <textarea class="form-control" name="ServiceDescription" rows="4" id="description" placeholder="Например, пеку вкусные пирожки с грибами, картошкой, луком"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Отправить</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="description">Описание:</label>
-                <textarea class="form-control" name="ServiceDescription" rows="4" id="description" placeholder="Например, пеку вкусные пирожки с грибами, картошкой, луком"></textarea>
-            </div>
-            <button type="submit" class="btn btn-default">Отправить</button>
-        </form>
+        </div>
     </div>
 
     <!-- Table -->
