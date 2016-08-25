@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <h2>Список соседей</h2>
+    <p>или чем заполнена база данных:</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Имя</th>
+                <th>Услуга</th>
+                <th>Описание</th>
+                <th>Широта</th>
+                <th>Долгота</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+            <tr>
+                <td><p>@person.Id</p></td>
+                <td><p>@person.PersonName</p></td>
+                <td><p>@person.ServiceName</p></td>
+                <td><p>@person.ServiceDescription</p></td>
+                <td><p>@person.CoordinateX</p></td>
+                <td><p>@person.CoordinateY</p></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

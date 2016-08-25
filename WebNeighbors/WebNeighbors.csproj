@@ -260,6 +260,10 @@
     <Content Include="Views\Start\Simple.cshtml" />
     <Content Include="Views\Start\Map.cshtml" />
     <Content Include="Views\Data\Index.cshtml" />
+    <Content Include="Views\Start\_Carousel.cshtml" />
+    <Content Include="Views\Start\_ExplainBoxes.cshtml" />
+    <Content Include="Views\Start\_InputData.cshtml" />
+    <Content Include="Views\Start\_Table.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
