@@ -18,42 +18,18 @@
                 zoom: 10
             });
 
-            /* Place bookmarks*/
-            myPlacemark = new ymaps.Placemark([55.86, 37.74], {
-                hintContent: 'Выгул собак',
-                balloonContent: 'Марина не имеет возможности завести собаку, но с удовольствием погуляет с вашей!'
-            });
-            myMap.geoObjects.add(myPlacemark);
+            @foreach (var person in Model)
+            {
+                <text>
+            console.log('Service = @person.ServiceName, x = @person.CoordinateX, y = @person.CoordinateY');
 
-            myPlacemark = new ymaps.Placemark([55.88, 37.74], {
-                hintContent: 'Пирожки горячие',
-                balloonContent: 'Пирожков Бабы Мани хватит и на вкучат, и на соседей!'
+            myPlacemark = new ymaps.Placemark([@(person.CoordinateX), @(person.CoordinateY)], {
+                hintContent: '@(person.ServiceName)',
+                balloonContent: '@(person.CoordinateX), @(person.CoordinateY)'
             });
             myMap.geoObjects.add(myPlacemark);
-
-            myPlacemark = new ymaps.Placemark([55.85, 37.73], {
-                hintContent: 'Уроки гитары',
-                balloonContent: 'Иван Иваныч играет шансон и готов по-соседски рассказать что к чему.'
-            });
-            myMap.geoObjects.add(myPlacemark);
-
-            myPlacemark = new ymaps.Placemark([55.768, 37.647], {
-                hintContent: 'Уборка дома',
-                balloonContent: 'Приберусь в доме, помою окна. Зульфия.'
-            });
-            myMap.geoObjects.add(myPlacemark);
-
-            myPlacemark = new ymaps.Placemark([55.760, 37.639], {
-                hintContent: 'Помощь с домашними заданиями 1-3 класс',
-                balloonContent: 'Чуткий и отзывчивый педагог Анжела Денисовна исправит двойки вашему отпрыску.'
-            });
-            myMap.geoObjects.add(myPlacemark);
-
-            myPlacemark = new ymaps.Placemark([55.763, 37.642], {
-                hintContent: 'Тренер йоги',
-                balloonContent: 'Ольга практирует йогу и готова потренироваться вместе с вами.'
-            });
-            myMap.geoObjects.add(myPlacemark);
+                </text>
+            }
         }
     </script>
 
