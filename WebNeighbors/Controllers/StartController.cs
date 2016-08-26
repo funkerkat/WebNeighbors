@@ -14,10 +14,21 @@ namespace WebNeighbors.Controllers
     }
 
     [HttpPost]
-    public ActionResult Index(Person person)
+    public ActionResult Index(Person person, string submitButton)
     {
-      db.Persons.Add(person);
-      db.SaveChanges();
+      switch (submitButton)
+      {
+        case "postData":
+          db.Persons.Add(person);
+          db.SaveChanges();
+          break;
+
+        case "cleanDatabase":
+          db.Persons.RemoveRange(db.Persons);
+          db.SaveChanges();
+          break;
+      }
+
       return View(db.Persons);
     }
 

@@ -28,7 +28,7 @@
                 balloonContent: '@(person.CoordinateX), @(person.CoordinateY)'
             });
             myMap.geoObjects.add(myPlacemark);
-                </text>
+            </text>
             }
         }
     </script>
@@ -79,6 +79,13 @@
 
     <!-- Table -->
     @Html.Partial("_Table")
+    <br>
+<div align="center">
+    <form role="form" method="post" action="">
+        <button type="submit" class="btn btn-default" value="cleanDatabase" name="submitButton">Очистить базу данных</button>
+    </form>
+</div>
+
 
 </body>
 </html>
