@@ -25,7 +25,7 @@
 
             myPlacemark = new ymaps.Placemark([@(person.CoordinateX), @(person.CoordinateY)], {
                 hintContent: '@(person.ServiceName)',
-                balloonContent: '@(person.CoordinateX), @(person.CoordinateY)'
+                balloonContent: '@(person.ServiceDescription)'
             });
             myMap.geoObjects.add(myPlacemark);
             </text>
